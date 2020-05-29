@@ -2,7 +2,7 @@
 > Card Game App
 
 ## General info
-School Project with Python. Making a Simple 
+School Project with Python. Focus on learning python and libraries such as pygames
 
 ## Technologies
 * Python
