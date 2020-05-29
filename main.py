@@ -1,6 +1,8 @@
 import pygame
 import random
 from settings import *
+from deck import Deck
+from card import *
 
 
 class Game:
@@ -43,6 +45,8 @@ class Game:
         # Game Loop - Draw
         self.window.fill(GREEN)
         self.all_sprites.draw(self.window)
+        deck = Deck()
+        deck.create()
         pygame.display.update()
 
 
