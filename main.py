@@ -7,14 +7,17 @@ class Game:
     def __init__(self):
         # initialize game window
 
-        self.playing = True
         pygame.init()
         self.window = pygame.display.set_mode((WIDTH, HEIGHT))
         self.clock = pygame.time.Clock()
+        self.playing = True
         self.running = True
         pygame.display.set_caption(TITLE)
         icon = pygame.image.load(ICON)
         pygame.display.set_icon(icon)
+
+    def new(self):
+        self.all_sprites = pygame.sprite.Group()
 
     def run(self):
         # Game Loop
@@ -26,7 +29,7 @@ class Game:
 
     def update(self):
         # Game Loop - Update
-        pass
+        self.all_sprites.update()
 
     def events(self):
         # Game Loop - events
@@ -39,13 +42,13 @@ class Game:
     def draw(self):
         # Game Loop - Draw
         self.window.fill(GREEN)
+        self.all_sprites.draw(self.window)
         pygame.display.update()
 
 
 game = Game()
 
 while game.running:
+    game.new()
     game.run()
 pygame.quit()
-
-
