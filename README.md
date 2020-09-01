@@ -12,9 +12,4 @@ School Project with Python. Focus on learning python and libraries such as pygam
 Project is: _UnderContruction_
 
 ## Contact
-Created Emmanuel!
-
-## git bash test
-Jag pushar upp något
-
-
+Created Emmanuel Ndziba
