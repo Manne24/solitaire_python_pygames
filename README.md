@@ -13,3 +13,8 @@ Project is: _UnderContruction_
 
 ## Contact
 Created Emmanuel!
+
+## git bash test
+Jag pushar upp något
+
+
